@@ -1,0 +1,46 @@
+.btn {
+  box-shadow: $shadow-4dp;
+  border-radius: $huge-radius;
+  border: none;
+  outline: none;
+  padding: 14px 32px;
+  text-transform: uppercase;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: $shadow-2dp;
+  }
+
+  &--secondary {
+    background: $secondary-800;
+    color: white;
+  }
+
+  &--primary {
+    background: white;
+    color: $secondary-800;
+    box-shadow: $shadow-1dp;
+    border: 1px solid $secondary-800;
+  }
+
+  &--small {
+    padding: 10px 22px;
+    font-size: 13px;
+    line-height: 16px;
+  }
+
+  &--medium {
+    font-size: 14px;
+    line-height: 16px;
+  }
+
+  &--big {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}

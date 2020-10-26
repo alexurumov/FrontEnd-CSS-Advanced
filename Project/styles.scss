@@ -1,0 +1,32 @@
+@import './styles/generic/_generic-normalize';
+
+@import './styles/settings/_settings-borders';
+@import './styles/settings/_settings-breakpoints';
+@import './styles/settings/_settings-colors';
+@import './styles/settings/_settings-shadows';
+
+@import './styles/objects/_objects-address';
+@import './styles/objects/_objects-containers';
+@import './styles/objects/_objects-description';
+@import './styles/objects/_objects-form';
+@import './styles/objects/_objects-images';
+@import './styles/objects/objects-profile';
+@import './styles/objects/_objects-wrappers';
+
+@import './styles/elements/_elements-images.scss';
+@import './styles/elements/_elements-input-fields';
+@import './styles/elements/_elements-select';
+@import './styles/elements/_elements-lists.scss';
+@import './styles/elements/_elements-typography';
+
+@import './styles/utilities/_utilities-reset';
+@import './styles/utilities/_utilities-text';
+
+@import './styles/components/_common/_components-button';
+@import './styles/components/_common/_components-footer';
+@import './styles/components/_common/components-header';
+@import './styles/components/_common/components-navigation';
+
+@import './styles/components/course/_components-course-main';
+@import './styles/components/trainers/_components-trainers-main';
+@import './styles/components/contact-us/components-contact-us-main';

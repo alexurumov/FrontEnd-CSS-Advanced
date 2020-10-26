@@ -1,0 +1,120 @@
+.c-trainers-main {
+  display: grid;
+  grid-template-rows: repeat(4, max-content);
+
+  &__welcome {
+    width: 100%;
+    display: grid;
+    grid-template-rows: max-content max-content;
+    justify-items: center;
+    row-gap: 24px;
+    padding: 64px 0;
+
+    &__wrapper {
+      background: $secondary-600;
+    }
+
+    &__title {
+      color: #ffffff;
+      align-self: flex-end;
+
+      @include for-tablet-landscape-up {
+        padding: 0 17%;
+      }
+    }
+
+    &__text {
+      color: #ffffff;
+      align-self: flex-start;
+      padding: 0;
+
+      @include for-tablet-landscape-up {
+        padding: 0 17%;
+      }
+    }
+  }
+
+  &__executives {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: max-content max-content;
+    row-gap: 64px;
+    padding: 64px 0;
+    position: relative;
+
+    @include small-desktop-up {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: max-content;
+      column-gap: 32px;
+      padding: 96px 0;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      background-repeat: no-repeat;
+      bottom: 0;
+      background: url(/assets/icons/horizontal_separator_blue.svg);
+      width: 100%;
+      height: 10px;
+    }
+  }
+
+  &__teachers {
+    display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: repeat(4, max-content);
+    justify-content: center;
+    justify-items: center;
+    row-gap: 2%;
+    column-gap: 5%;
+    padding: 96px 0;
+
+    &__extra {
+      display: none;
+    }
+
+    @include for-tablet-landscape-up {
+      grid-template-columns: repeat(4, max-content);
+      grid-template-rows: repeat(4, max-content);
+
+      &__extra {
+        display: grid;
+      }
+    }
+  }
+
+  &__apply {
+
+    display: grid;
+    grid-template-rows: max-content max-content;
+    row-gap: 24px;
+
+    @include small-desktop-up {
+      margin-bottom: 64px;
+    }
+
+    &__wrapper {
+      color: #ffffff;
+      background: $blue-300;
+      border-top: 12px solid $blue-200;
+      padding: 64px 0;
+    }
+
+    &__info {
+      
+      padding: 0;
+      text-align: left;
+
+      @include for-tablet-landscape-up {
+        padding: 0 17%;
+        text-align: center;
+      }
+
+      &__text {
+        padding: 24px 0;
+      }
+    }
+  }
+}

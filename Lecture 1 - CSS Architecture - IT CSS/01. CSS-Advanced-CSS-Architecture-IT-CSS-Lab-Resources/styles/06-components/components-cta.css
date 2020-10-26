@@ -1,0 +1,12 @@
+.c-cta {
+    padding: 15px 8px;
+    border-radius: 10px;
+    border: none;
+    background-color: #44a9f8;
+    color: white;
+    box-shadow: 3px 3px 10px #44a9f8;
+}
+
+.c-cta:hover {
+    text-decoration: none;
+}

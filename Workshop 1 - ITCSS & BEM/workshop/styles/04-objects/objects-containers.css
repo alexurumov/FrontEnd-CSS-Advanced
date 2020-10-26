@@ -1,0 +1,15 @@
+.horizontal-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.vertical-container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.wrapper-container {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}

@@ -1,0 +1,52 @@
+.block {
+  padding: 20px;
+  background-color: slategray;
+  font-size: 22px;
+  color: #fff;
+  border-radius: 5px;
+  min-width: 140px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper {
+  background-color: tomato;
+  padding: 10px;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-column-gap: 10px;
+  -ms-grid-columns: 1fr 300px;
+      grid-template-columns: 1fr 300px;
+      grid-template-areas: "header header" "main sidebar" "footer footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: header;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+aside {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  height: 50%;
+}
+/*# sourceMappingURL=grid.css.map */

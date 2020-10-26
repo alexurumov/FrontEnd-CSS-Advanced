@@ -1,0 +1,35 @@
+.u-text {
+  &--underline {
+    text-decoration: underline !important;
+  }
+
+  &--decoration-none {
+    text-decoration: none !important;
+  }
+
+  &--uppercase {
+    text-transform: uppercase !important;
+  }
+
+  &--capitalise {
+    text-transform: capitalize !important;
+  }
+
+  &--centered {
+    text-align: center !important;
+  }
+
+  &--bold {
+    font-weight: bold !important;
+  }
+  &--hyperlink {
+    font-weight: bolder;
+    color: $secondary-800;
+    text-decoration: underline;
+    text-underline-position: under;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

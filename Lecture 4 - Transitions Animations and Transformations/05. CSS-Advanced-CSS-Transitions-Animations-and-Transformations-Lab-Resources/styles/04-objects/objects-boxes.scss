@@ -1,0 +1,17 @@
+.o-box {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+
+  &--red {
+    background: red;
+    color: white;
+  }
+
+  &--circle {
+    border-radius: 50%;
+  }
+}

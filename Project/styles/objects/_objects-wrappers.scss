@@ -1,0 +1,14 @@
+.o-page-wrapper {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 75px 1fr 324px; 
+    @include for-phone-only {
+        grid-template-rows: 72px 1fr 567px; 
+    }
+}
+
+.o-page-content-wrapper {
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+}

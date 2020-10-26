@@ -1,0 +1,13 @@
+.o-address {
+  display: grid;
+  grid-template-rows: max-content max-content;
+  row-gap: 18px;
+
+  &__title {
+    color: $primary-300;
+  }
+
+  &__info {
+    color: $grey-700;
+  }
+}

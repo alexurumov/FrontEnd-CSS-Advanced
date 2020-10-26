@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  background: #565656;
+  max-height: 300px;
+  overflow: auto;
+}
+
+.footer__img {
+  position: absolute;
+  margin-top: -152px;
+  margin-left: 5%;
+  width: 220px;
+  height: 455px;
+}

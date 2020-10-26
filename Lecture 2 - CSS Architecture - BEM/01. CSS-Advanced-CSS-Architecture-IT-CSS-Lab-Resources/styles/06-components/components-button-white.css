@@ -1,0 +1,11 @@
+.c-button-white {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: none;
+    background: white;
+    color: #44a9f8;
+}
+
+.c-button-white:hover {
+    text-decoration: none;
+}

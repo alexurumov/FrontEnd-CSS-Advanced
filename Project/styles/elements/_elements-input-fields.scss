@@ -1,0 +1,11 @@
+input {
+  background: transparent;
+  box-sizing: border-box;
+  border-radius: $medium-radius;
+  padding: 16px 52px 16px 16px;
+  min-height: 50px;
+
+  &:hover {
+    cursor: text;
+  }
+}

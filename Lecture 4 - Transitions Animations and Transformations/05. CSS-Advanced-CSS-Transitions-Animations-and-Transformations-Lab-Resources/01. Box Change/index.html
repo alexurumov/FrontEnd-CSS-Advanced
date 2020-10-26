@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Animations 1</title>
+        <link rel="stylesheet" href="../styles/01-settings/settings-typography.css">
+
+        <link rel="stylesheet" href="../styles/02-generic/generic-normalize.css">
+
+        <link rel="stylesheet" href="../styles/04-objects/objects-boxes.css">
+
+        <style>
+            .o-box {
+                
+                transition: all 1s ease-out;
+
+                
+            }
+            .o-box:hover {
+                    width: 100px;
+                    height: 100px;
+                    background-color: blue;
+                    font-size: 14px;
+                    transform: translate(100px, 20px);
+                    color: yellow;
+                }
+        </style>
+    </head>
+    <body>
+        <main class="main-content">
+            <div class="o-box o-box--red">
+                Example
+            </div>
+        </main>
+    </body>
+</html>

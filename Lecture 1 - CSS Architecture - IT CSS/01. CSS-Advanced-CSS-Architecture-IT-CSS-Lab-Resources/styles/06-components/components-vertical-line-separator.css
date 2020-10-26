@@ -1,0 +1,5 @@
+.c-vertical-separator-line {
+    border-left: 2px solid white;
+    height: 25px;
+    margin: 0 30px;
+}

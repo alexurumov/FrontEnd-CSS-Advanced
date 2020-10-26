@@ -1,0 +1,116 @@
+.c-contact-us-main {
+  &__map {
+    position: relative;
+    transform: translateY(-75px);
+  }
+
+  &__contacts {
+    max-width: 520px;
+    border-radius: $big-radius;
+    box-shadow: $shadow-1dp;
+    padding: 32px;
+    display: grid;
+    grid-template-rows: max-content max-content;
+    row-gap: 32px;
+    position: relative;
+    transform: translateY(-20%);
+    background: #ffffff;
+
+    @include for-small-tablet-landscape-up {
+        transform: translateY(-65%);
+    }
+    @include for-tablet-landscape-up {
+        transform: translateY(-80%);
+    }
+
+    @include small-desktop-up {
+        transform: translateY(-95%);
+    }
+
+    &__details {
+      display: grid;
+      grid-template-columns: max-content;
+      grid-template-rows: max-content max-content;
+      grid-gap: 24px;
+
+      @include for-tablet-portrait-up {
+        grid-template-columns: 216px 216px;
+        grid-template-rows: max-content max-content;
+      }
+    }
+
+    &__find-us {
+      justify-self: center;
+    }
+
+    &__working-time {
+      display: grid;
+      grid-template-columns: max-content 1fr;
+      grid-template-rows: max-content max-content;
+      column-gap: 24px;
+      row-gap: 18px;
+    }
+
+    &__time-span {
+        color: $secondary-800;
+    }
+  }
+
+  &__form {
+      display: grid;
+      grid-template-rows: max-content max-content;
+      row-gap: 32px;
+      justify-content: center;
+      justify-items: center;
+      padding-bottom: 95px;
+      margin-top: -7%;
+
+      @include for-small-tablet-landscape-up {
+        margin-top: -20%;
+      }
+
+      &__title {
+          color: $primary-300;
+      }
+  }
+
+  &__directions {
+      display: grid;
+      grid-template-rows: max-content max-content;
+      row-gap: 48px;
+      justify-items: flex-start;
+
+      @include for-tablet-landscape-up {
+        justify-items: center;
+      }
+      
+    &__wrapper {
+        padding: 96px 0;
+        background: $secondary-50;
+    }
+
+    &__title {
+        color: $primary-300;
+    }
+
+    &__alternatives {
+        display: grid;
+        grid-template-columns: max-content;
+        grid-template-rows: repeat(3, max-content);
+        grid-gap: 33px;
+        
+        @include for-tablet-landscape-up {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: max-content;
+        }
+    }
+
+    &__alternative {
+        max-width: 300px;
+        
+        @include for-small-tablet-landscape-up {
+            max-width: 600px;
+        }
+    }
+  }
+}

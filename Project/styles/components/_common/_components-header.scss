@@ -1,0 +1,75 @@
+.c-header {
+  background: #ffffff;
+  box-shadow: $shadow-2dp;
+
+  position: relative;
+  z-index: 1;
+
+  .o-page-content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 32px;
+
+    @include small-desktop-up {
+      grid-template-columns: 12% 1fr max-content;
+    }
+  }
+
+  &__front {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-column-gap: 14px;
+    align-items: center;
+
+    @include small-desktop-up {
+      grid-column-gap: 16px;
+    }
+  }
+
+  &__arrow {
+    cursor: pointer;
+
+    @include for-phone-only {
+      content: url("/assets/icons/logo_arrow_dark.svg");
+    }
+  }
+
+  &__logo {
+    cursor: pointer;
+
+    @include for-phone-only {
+      content: url("/assets/icons/logo_vertical.svg");
+    }
+  }
+
+  &__rear {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    align-items: center;
+    grid-column-gap: 24px;
+    justify-content: end;
+
+    @include small-desktop-up {
+      grid-column-gap: 32px;
+    }
+  }
+
+  &__search {
+    cursor: pointer;
+    display: none;
+    @include small-desktop-up {
+      display: inline;
+    }
+  }
+
+  &__sandwich {
+    display: block;
+
+    &:hover {
+      cursor: pointer;
+    }
+    @include small-desktop-up {
+      display: none;
+    }
+  }
+}

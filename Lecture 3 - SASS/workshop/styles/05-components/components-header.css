@@ -1,0 +1,11 @@
+.header__nav {
+    background: #F8F8F8;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 3px 4px rgba(0, 0, 0, 0.12), 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.header__info {
+    background: #FF9100;
+    color: #fff;
+    text-align: center;
+    padding: 64px 230px;
+}

@@ -1,0 +1,14 @@
+select {
+    background: $grey-50;
+    border: none;
+    box-sizing: border-box;
+    border-radius: $medium-radius;
+    padding: 14px 60px 14px 14px;
+    appearance: none;
+    min-height: 50px;
+    color: $grey-700;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

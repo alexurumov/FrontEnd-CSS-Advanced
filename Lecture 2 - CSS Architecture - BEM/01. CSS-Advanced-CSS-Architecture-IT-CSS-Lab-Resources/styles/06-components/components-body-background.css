@@ -1,0 +1,16 @@
+.c-body-background {
+    position: absolute;
+    z-index: -1;
+}
+
+.c-body-background img {
+    height: 500px;
+}
+
+.c-body-background:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(26, 165, 252, 0.80);
+}

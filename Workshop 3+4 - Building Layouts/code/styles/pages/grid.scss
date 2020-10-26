@@ -1,0 +1,39 @@
+@import '../settings/settings-breakpoints';
+
+.block {
+    padding: 20px;
+    background-color: slategray;
+    font-size: 22px;
+    color: #fff;
+    border-radius: 5px;
+    min-width: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: tomato;
+    padding: 10px;
+    min-height: 100vh;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-column-gap: 10px;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas: "header header"
+                         "main sidebar"
+                         "footer footer";
+}
+
+header {
+    grid-area: header;
+}
+
+footer {
+    grid-area: footer;
+}
+
+aside {
+    align-self: start;
+    height: 50%;
+}

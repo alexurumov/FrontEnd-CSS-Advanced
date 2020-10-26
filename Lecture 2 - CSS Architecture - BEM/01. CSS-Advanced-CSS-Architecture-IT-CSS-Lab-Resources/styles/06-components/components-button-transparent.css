@@ -1,0 +1,11 @@
+.c-button-transparent {
+    padding: 10px 30px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+}
+
+.c-button-transparent:hover {
+    text-decoration: none;
+}
